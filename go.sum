@@ -1,0 +1,8 @@
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+gitlab.ziggurat.cn/guomi/gm-common v0.0.0-20200429060423-0e2f41ef1882 h1:a5e7cPuH/lmtBiypwUo2w9jST+a0TJksJtY0q5cSSSQ=
+gitlab.ziggurat.cn/guomi/gm-common v0.0.0-20200429060423-0e2f41ef1882/go.mod h1:VTm6AYHZx0uGrdwE26B1AeZ2z6n0meWGM6uaFZcp/90=
+gitlab.ziggurat.cn/guomi/gm-common v0.0.0-20200429064519-a4639c183bc4 h1:lBOeXPswotUw29gEARgSPYAqtn0n0z5QLEs0g6qVvQg=
+gitlab.ziggurat.cn/guomi/gm-common v0.0.0-20200429064519-a4639c183bc4/go.mod h1:VTm6AYHZx0uGrdwE26B1AeZ2z6n0meWGM6uaFZcp/90=
+gitlab.ziggurat.cn/guomi/gm-go v1.3.0 h1:oSIeI8rKPty6gBjdSBx4dZdanKNF/famt5VL1spvjIw=
+gitlab.ziggurat.cn/guomi/gm-go v1.3.0/go.mod h1:PAXX7olQ9t3K84Dlqf+nKegm1G65k63gKULbKYL3epY=
