@@ -2,6 +2,7 @@ package gosm
 
 import (
 	"crypto"
+	"crypto/elliptic"
 	"crypto/rand"
 
 	"github.com/pkg/errors"
@@ -32,6 +33,10 @@ func (gs *GoSm2) Encrypt(k *primitive.Sm2PublicKey, plaintext []byte) ([]byte, e
 func (gs *GoSm2) Decrypt(k *primitive.Sm2PrivateKey, ciphertext []byte, opts crypto.DecrypterOpts) ([]byte, error) {
 	pri := privateKeyToSm2(k)
 	return pri.Decrypt(ciphertext)
+}
+
+func (gs *GoSm2) Sm2P256Curve() elliptic.Curve {
+	return sm2.P256Sm2()
 }
 
 type KeysDerive struct{}

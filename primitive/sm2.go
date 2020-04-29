@@ -2,6 +2,7 @@ package primitive
 
 import (
 	"crypto"
+	"crypto/elliptic"
 )
 
 type Sm2Crypto interface {
@@ -9,4 +10,5 @@ type Sm2Crypto interface {
 	Sign(k *Sm2PrivateKey, msg []byte, opts crypto.SignerOpts) ([]byte, error)
 	Encrypt(k *Sm2PublicKey, plaintext []byte) ([]byte, error)
 	Decrypt(k *Sm2PrivateKey, ciphertext []byte, opts crypto.DecrypterOpts) ([]byte, error)
+	Sm2P256Curve() elliptic.Curve
 }
