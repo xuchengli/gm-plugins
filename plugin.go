@@ -3,13 +3,13 @@ package gm_plugins
 import (
 	"sync"
 
-	"gitlab.ziggurat.cn/guomi/gm-common/sm"
 	"gitlab.ziggurat.cn/guomi/gm-plugins/gosm"
+	"gitlab.ziggurat.cn/guomi/gm-plugins/primitive"
 )
 
 type SmCryptoSuite struct {
-	sm.Sm2Crypto
-	sm.KeysGenerator
+	primitive.Sm2Crypto
+	primitive.KeysGenerator
 }
 
 var (
@@ -17,7 +17,7 @@ var (
 	scs    *SmCryptoSuite
 )
 
-func GetSmCryptoSuite() sm.Context {
+func GetSmCryptoSuite() primitive.Context {
 	smOnce.Do(func() {
 		scs = &SmCryptoSuite{
 			Sm2Crypto:     new(gosm.GoSm2),
