@@ -6,8 +6,8 @@ import (
 	"crypto/rand"
 
 	"github.com/pkg/errors"
+	"github.com/zhigui-projects/gm-go/sm2"
 	"github.com/zhigui-projects/gm-plugins/primitive"
-	"gitlab.ziggurat.cn/guomi/gm-go/sm2"
 )
 
 type GoSm2 struct{}

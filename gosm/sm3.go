@@ -3,7 +3,7 @@ package gosm
 import (
 	"hash"
 
-	"gitlab.ziggurat.cn/guomi/gm-go/sm3"
+	"github.com/zhigui-projects/gm-go/sm3"
 )
 
 type GoSm3 struct{}
