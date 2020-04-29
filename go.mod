@@ -1,4 +1,4 @@
-module gitlab.ziggurat.cn/guomi/gm-plugins
+module github.com/zhigui-projects/gm-plugins
 
 go 1.12
 
