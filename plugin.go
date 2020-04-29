@@ -3,8 +3,8 @@ package gm_plugins
 import (
 	"sync"
 
-	"gitlab.ziggurat.cn/guomi/gm-plugins/gosm"
-	"gitlab.ziggurat.cn/guomi/gm-plugins/primitive"
+	"github.com/zhigui-projects/gm-plugins/gosm"
+	"github.com/zhigui-projects/gm-plugins/primitive"
 )
 
 type SmCryptoSuite struct {

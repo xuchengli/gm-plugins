@@ -1,8 +1,8 @@
 package gosm
 
 import (
+	"github.com/zhigui-projects/gm-plugins/primitive"
 	"gitlab.ziggurat.cn/guomi/gm-go/sm2"
-	"gitlab.ziggurat.cn/guomi/gm-plugins/primitive"
 )
 
 func publicKeyToSm2(k *primitive.Sm2PublicKey) *sm2.PublicKey {
