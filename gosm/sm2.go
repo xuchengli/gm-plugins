@@ -60,3 +60,27 @@ func (kd *KeysDerive) ParsePKCS8UnecryptedPrivateKey(der []byte) (*primitive.Sm2
 	}
 	return sm2ToPrivateKey(pri), nil
 }
+
+func (kd *KeysDerive) ParsePKCS8PrivateKey(der, pwd []byte) (*primitive.Sm2PrivateKey, error) {
+	pri, err := sm2.ParsePKCS8PrivateKey(der, pwd)
+	if err != nil {
+		return nil, err
+	}
+	return sm2ToPrivateKey(pri), nil
+}
+
+func (kd *KeysDerive) MarshalSm2PrivateKey(k *primitive.Sm2PrivateKey, pwd []byte) ([]byte, error) {
+	return sm2.MarshalSm2PrivateKey(privateKeyToSm2(k), pwd)
+}
+
+func (kd *KeysDerive) ParseSm2PublicKey(der []byte) (*primitive.Sm2PublicKey, error) {
+	pub, err := sm2.ParseSm2PublicKey(der)
+	if err != nil {
+		return nil, err
+	}
+	return sm2ToPublicKey(pub), nil
+}
+
+func (kd *KeysDerive) MarshalSm2PublicKey(k *primitive.Sm2PublicKey) ([]byte, error) {
+	return sm2.MarshalSm2PublicKey(publicKeyToSm2(k))
+}
