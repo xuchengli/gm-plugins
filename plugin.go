@@ -10,6 +10,7 @@ import (
 type SmCryptoSuite struct {
 	primitive.Sm2Crypto
 	primitive.Sm3Crypro
+	primitive.Sm4Crypro
 	primitive.KeysGenerator
 }
 
@@ -23,6 +24,7 @@ func GetSmCryptoSuite() primitive.Context {
 		scs = &SmCryptoSuite{
 			Sm2Crypto:     new(gosm.GoSm2),
 			Sm3Crypro:     new(gosm.GoSm3),
+			Sm4Crypro:     new(gosm.GoSm4),
 			KeysGenerator: new(gosm.KeysDerive),
 		}
 	})
