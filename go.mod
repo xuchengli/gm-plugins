@@ -7,4 +7,4 @@ require (
 	github.com/zhigui-projects/gm-go v0.0.0
 )
 
-replace github.com/zhigui-projects/gm-go => gitlab.ziggurat.cn/guomi/gm-go v1.3.1
+replace github.com/zhigui-projects/gm-go => gitlab.ziggurat.cn/guomi/gm-go v0.0.0-20200510034956-8e4ef670d055
