@@ -19,7 +19,7 @@ import (
 
 func WritePrivateKeyToPem(FileName string, key *primitive.Sm2PrivateKey, pwd []byte) (bool, error) {
 	var block *pem.Block
-	der, err := gm_plugins.GetSmCryptoSuite().MarshalSm2PrivateKey(key, pwd)
+	der, err := gm_plugins.GetSmCryptoSuite().MarshalPKCS8PrivateKey(key, pwd)
 	if err != nil {
 		return false, err
 	}
@@ -68,11 +68,11 @@ func ReadPublicKeyFromPem(fileName string, pwd []byte) (*primitive.Sm2PublicKey,
 		return nil, errors.Errorf("failed to decode public key")
 	}
 
-	return gm_plugins.GetSmCryptoSuite().ParseSm2PublicKey(block.Bytes)
+	return gm_plugins.GetSmCryptoSuite().ParsePKIXPublicKey(block.Bytes)
 }
 
 func WritePublicKeyToPem(FileName string, key *primitive.Sm2PublicKey, _ []byte) (bool, error) {
-	der, err := gm_plugins.GetSmCryptoSuite().MarshalSm2PublicKey(key)
+	der, err := gm_plugins.GetSmCryptoSuite().MarshalPKIXPublicKey(key)
 	if err != nil {
 		return false, err
 	}
