@@ -13,8 +13,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	gm_plugins "github.com/zhigui-projects/gm-plugins"
-	"github.com/zhigui-projects/gm-plugins/primitive"
+	gm_plugins "github.com/xuchengli/gm-plugins"
+	"github.com/xuchengli/gm-plugins/primitive"
 )
 
 func WritePrivateKeyToPem(FileName string, key *primitive.Sm2PrivateKey, pwd []byte) (bool, error) {

@@ -13,7 +13,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/zhigui-projects/gm-go/sm2"
-	"github.com/zhigui-projects/gm-plugins/primitive"
+	"github.com/xuchengli/gm-plugins/primitive"
 )
 
 type GoSm2 struct{}

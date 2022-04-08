@@ -9,7 +9,7 @@ package utils
 import (
 	"crypto"
 	"github.com/pkg/errors"
-	"github.com/zhigui-projects/gm-plugins/primitive"
+	"github.com/xuchengli/gm-plugins/primitive"
 )
 
 func CheckSm2PrivateKey(key crypto.Signer) (*primitive.Sm2PrivateKey, error) {

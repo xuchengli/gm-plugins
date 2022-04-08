@@ -9,8 +9,8 @@ package gm_plugins
 import (
 	"sync"
 
-	"github.com/zhigui-projects/gm-plugins/gosm"
-	"github.com/zhigui-projects/gm-plugins/primitive"
+	"github.com/xuchengli/gm-plugins/gosm"
+	"github.com/xuchengli/gm-plugins/primitive"
 )
 
 type SmCryptoSuite struct {
